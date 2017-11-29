@@ -9,8 +9,6 @@ module Jekyll
     @site         = Jekyll::Site.new(config)
     @site.reader.read
 
-    byebug
-
     def test_page_parent_method
       assert Jekyll::Page.method_defined?(:parent)
     end
