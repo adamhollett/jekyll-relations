@@ -1,0 +1,14 @@
+## Metadata
+title: jekyll-relations
+email: adam.hollett@shopify.com
+description: >
+       A Jekyll plugin to create relations between pages according to file structure.
+url:   https://github.com/adamhollett/jekyll-relations
+
+## Build settings
+theme: minima
+permalink: pretty
+
+## Plugins
+plugins:
+  - jekyll-relations
