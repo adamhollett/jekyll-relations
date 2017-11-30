@@ -2,12 +2,16 @@
 
 A Jekyll plugin to create relations between pages according to your file structure.
 
+> ⚠️  
+> **Note**:  
+> This plugin is beta-quality and relies on the `permalink: pretty` configuration setting to work. Future versions will be compatible with other permalink settings.
+
 ## Installation
 
 1.  Add this line to the `jekyll_plugins` group of your site's Gemfile:
 
     ``` ruby
-    gem 'jekyll-relations'
+    gem 'jekyll-relations', git: 'https://github.com/adamhollett/jekyll-relations'
     ```
 
 2.  Add `jekyll-relations` under the `plugins` key in your site's `_config.yml`:
@@ -31,7 +35,7 @@ Returns a `Jekyll::Page`. You can access a page's parent in Liquid with `{{ page
 
 A page's **parent** is the next highest page in the folder structure.
 
-- If a page's filename is `index`, then its parent is the page with the filename `index` in the folder above the page:
+- If a page's filename is `index`, then its parent is the page with the filename `index` in the folder above:
 
   ```
   about.md
