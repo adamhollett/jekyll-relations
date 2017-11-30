@@ -8,6 +8,7 @@ module Jekyll
       # Returns the Page object for the parent page.
       def parent
         @parent ||= begin
+          return nil unless html?
           depth = url.count('/')
           site.pages
             .select(&:html?)
@@ -36,7 +37,7 @@ module Jekyll
       #
       # Returns an Array of Page objects or an empty Array.
       def children
-        return [] unless index?
+        return [] unless html? && index?
         @children ||= begin
           depth = url.count('/')
           site.pages
