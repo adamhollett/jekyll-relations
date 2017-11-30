@@ -27,11 +27,6 @@ module Jekyll
       assert_equal '/fruit/', page.parent.url
     end
 
-    def test_asset_parent_method
-      page = @pages.find { |p| p.url == '/assets/main.css' }
-      assert_nil page.parent
-    end
-
     def test_index_page_parent
       page = @pages.find { |p| p.url == '/fruit/' }
       assert_equal '/', page.parent.url

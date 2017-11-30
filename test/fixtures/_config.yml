@@ -6,7 +6,6 @@ description: >
 url:   https://github.com/adamhollett/jekyll-relations
 
 ## Build settings
-theme: minima
 permalink: pretty
 
 ## Plugins
