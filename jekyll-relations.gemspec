@@ -8,20 +8,18 @@ Gem::Specification.new do |spec|
   spec.authors       = ['Adam Hollett']
   spec.email         = ['mail@adamhollett.com']
 
-  spec.summary       = 'Jekyll plugin to make pages aware of their relatives.'
+  spec.summary       = 'Jekyll plugin to create relations between pages according to file structure.'
   spec.homepage      = 'https://github.com/adamhollett/jekyll-relations'
   spec.license       = 'MIT'
 
   spec.files         = `git ls-files -z`.split("\x0").reject do |f|
     f.match(%r{^(test|spec|features)/})
   end
-  spec.bindir        = 'exe'
-  spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ['lib']
 
-  spec.add_dependency 'jekyll',               '~> 3.0'
-  spec.add_development_dependency 'bundler',  '~> 1.16'
-  spec.add_development_dependency 'rake',     '~> 10.0'
-  spec.add_development_dependency 'minitest'
-  spec.add_development_dependency 'minitest-reporters'
+  spec.add_dependency 'jekyll',                         '~> 3.0'
+  spec.add_development_dependency 'bundler',            '~> 1.16'
+  spec.add_development_dependency 'rake',               '~> 10.0'
+  spec.add_development_dependency 'minitest',           '~> 0'
+  spec.add_development_dependency 'minitest-reporters', '~> 0'
 end
