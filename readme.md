@@ -1,5 +1,7 @@
 # Jekyll Relations plugin
 
+[![Travis CI](https://img.shields.io/travis/adamhollett/jekyll-relations.svg)](https://travis-ci.org/adamhollett/jekyll-relations)
+
 A Jekyll plugin to create relations between pages according to your file structure.
 
 > ⚠️  
